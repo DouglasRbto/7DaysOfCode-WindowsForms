@@ -36,7 +36,7 @@ namespace CatAsService.API
         {
             Client = new RestClient($"https://api.thecatapi.com/v1/favourites/");
             Request = new RestRequest("", Method.Get);
-            Request.AddHeader("x-api-key", "API KEY);
+            Request.AddHeader("x-api-key", API KEY);
             Response = Client.ExecuteAsync(Request).GetAwaiter().GetResult();
 
             var favoriteList = new List<Favorite>();
